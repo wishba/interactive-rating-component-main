@@ -43,6 +43,9 @@ section p {
 
 .section__number {
   margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 .section__number button {
