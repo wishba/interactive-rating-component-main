@@ -21,19 +21,18 @@
           to help us improve our offering!
         </p>
         <div class="section__number">
-          <button>1</button>
+          <!-- <button class="section-rated">1</button> -->
+          <button onclick="rate()" id="rate">1</button>
           <button>2</button>
           <button>3</button>
           <button>4</button>
           <button>5</button>
         </div>
-        <button onclick="submit()" class="button__submit">
+        <button onclick="submit()" class="section__submit">
           Submit
         </button>
       </div>
     </section>
-
-    <br>
 
     <section id="submit" class="section__thank">
       <div class="section__container">
@@ -61,6 +60,15 @@
   <script>
     function submit() {
       document.getElementById("submit").style.display = "block";
+    }
+
+    function rate() {
+      const x = document.getElementById("rate");
+      if (x.className === "") {
+        x.className += " section-rated";
+      } else {
+        x.className = "";
+      }
     }
   </script>
 </body>

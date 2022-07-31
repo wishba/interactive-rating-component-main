@@ -65,7 +65,12 @@ section p {
   color: hsl(0, 0%, 100%);
 }
 
-.button__submit {
+.section__number .section-rated {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.section__submit {
   width: 100%;
   border-radius: 20px;
   padding: 10px;
@@ -75,7 +80,7 @@ section p {
   cursor: pointer;
 }
 
-.button__submit:hover {
+.section__submit:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
 }
