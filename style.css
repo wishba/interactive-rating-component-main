@@ -99,10 +99,14 @@ section p {
 
 .section__selected {
   background-color: hsl(213, 20%, 25%);
-  color: hsl(25, 97%, 53%);
   padding: 5px;
   margin: 16px 40px;
   border-radius: 20px;
+}
+
+.section__selected>* {
+  color: hsl(25, 97%, 53%);
+  display: inline;
 }
 
 
