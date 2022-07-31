@@ -12,9 +12,11 @@ section {
   width: 300px;
   height: 350px;
   border-radius: 10px;
-  margin: auto;
 
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section h1 {
@@ -82,7 +84,7 @@ section p {
 .section__thank {
   text-align: center;
 
-  /* display: none; */
+  display: none;
 }
 
 .section__illust {
@@ -102,8 +104,12 @@ section p {
 /* footer */
 .attribution {
   font-size: 11px;
-  text-align: center;
   color: hsl(217, 12%, 63%);
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .attribution a {
