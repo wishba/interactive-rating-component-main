@@ -65,10 +65,10 @@ section p {
   color: hsl(0, 0%, 100%);
 }
 
-/* .section__number .section-rated {
+.section__number button:focus {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
-} */
+}
 
 .section__submit {
   width: 100%;
@@ -84,6 +84,7 @@ section p {
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
 }
+
 
 /* thank */
 .section__thank {
