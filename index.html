@@ -20,9 +20,10 @@
           Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!
         </p>
-        <div class="section__number">
+        <div onclick="rate()" id="rate" class="section__number">
           <!-- <button class="section-rated">1</button> -->
-          <button onclick="rate()" id="rate">1</button>
+          <!-- <button onclick="rate()" id="rate">1</button> -->
+          <button>1</button>
           <button>2</button>
           <button>3</button>
           <button>4</button>
@@ -64,10 +65,12 @@
 
     function rate() {
       const x = document.getElementById("rate");
-      if (x.className === "") {
+      if (x.className === "section__number") {
+        // if (x.className === "") {
         x.className += " section-rated";
       } else {
-        x.className = "";
+        x.className = "section__number";
+        // x.className = "";
       }
     }
   </script>

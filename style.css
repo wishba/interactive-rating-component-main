@@ -65,7 +65,8 @@ section p {
   color: hsl(0, 0%, 100%);
 }
 
-.section__number .section-rated {
+.section__number.section-rated>* {
+  /* .section__number .section-rated { */
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
 }
