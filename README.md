@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-using-foreach-4GVdIi24nv)
+- Live Site URL: [Live site URL](https://wishba.github.io/interactive-rating-component-main/)
 
 ## My process
 
