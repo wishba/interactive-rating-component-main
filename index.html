@@ -37,12 +37,11 @@
     <section id="submit" class="section__thank">
       <div class="section__container">
         <img class="section__illust" src="images/illustration-thank-you.svg" alt="thank you illustration">
-        <p class="section__selected">
-          You selected
-          <!-- Add rating here -->
-          <!-- 4 -->
-          out of 5
-        </p>
+        <div class="section__selected">
+          <p> You selected </p>
+          <p id="rating"> 0 </p>
+          <p> out of 5 </p>
+        </div>
         <h1> Thank you! </h1>
         <p>
           We appreciate you taking the time to give a rating. If you ever need more support,
@@ -71,12 +70,21 @@
        }
      } */
 
+
+    // document.getElementById("rating").innerHTML = "New text!";
+    const rating = document.getElementById("rating");
+
+    // const rateWrapper = document.querySelectorAll(".section__number");
     const rates = document.querySelectorAll(".section__number button");
-    rates.forEach((rate, idx) => {
+    rates.forEach((rate, clickedIdx) => {
       rate.addEventListener("click", () => {
-        console.log(`rate of index ${idx + 1} was clicked`);
+        // rateWrapper.classList.add("disabled");
+        console.log(`rate ${clickedIdx + 1} was clicked`);
+
+        rating.innerHTML = clickedIdx + 1;
       });
     });
+
   </script>
 </body>
 
