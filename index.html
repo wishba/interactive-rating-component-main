@@ -27,7 +27,7 @@
           <button>4</button>
           <button>5</button>
         </div>
-        <button class="button__submit">
+        <button onclick="submit()" class="button__submit">
           Submit
         </button>
       </div>
@@ -35,7 +35,7 @@
 
     <br>
 
-    <section class="section__thank">
+    <section id="submit" class="section__thank">
       <div class="section__container">
         <img class="section__illust" src="images/illustration-thank-you.svg" alt="thank you illustration">
         <p class="section__selected">
@@ -57,6 +57,12 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/wishba" target="_blank">Wisnu Bayu</a>.
   </div>
+
+  <script>
+    function submit() {
+      document.getElementById("submit").style.display = "block";
+    }
+  </script>
 </body>
 
 </html>
