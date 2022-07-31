@@ -20,8 +20,7 @@
           Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!
         </p>
-        <div onclick="rate()" id="rate" class="section__number">
-          <!-- <button class="section-rated">1</button> -->
+        <div class="section__number">
           <!-- <button onclick="rate()" id="rate">1</button> -->
           <button>1</button>
           <button>2</button>
@@ -63,16 +62,21 @@
       document.getElementById("submit").style.display = "block";
     }
 
-    function rate() {
-      const x = document.getElementById("rate");
-      if (x.className === "section__number") {
-        // if (x.className === "") {
-        x.className += " section-rated";
-      } else {
-        x.className = "section__number";
-        // x.className = "";
-      }
-    }
+    /*  function rate() {
+       const x = document.getElementById("rate");
+       if (x.className === "") {
+         x.className += " section-rated";
+       } else {
+         x.className = "";
+       }
+     } */
+
+    const rates = document.querySelectorAll(".section__number button");
+    rates.forEach((rate, idx) => {
+      rate.addEventListener("click", () => {
+        console.log(`rate of index ${idx + 1} was clicked`);
+      });
+    });
   </script>
 </body>
 
