@@ -21,7 +21,6 @@
           to help us improve our offering!
         </p>
         <div class="section__number">
-          <!-- <button onclick="rate()" id="rate">1</button> -->
           <button>1</button>
           <button>2</button>
           <button>3</button>
@@ -57,34 +56,20 @@
   </div>
 
   <script>
-    function submit() {
-      document.getElementById("submit").style.display = "block";
-    }
-
-    /*  function rate() {
-       const x = document.getElementById("rate");
-       if (x.className === "") {
-         x.className += " section-rated";
-       } else {
-         x.className = "";
-       }
-     } */
-
-
-    // document.getElementById("rating").innerHTML = "New text!";
+    const rates = document.querySelectorAll(".section__number button");
     const rating = document.getElementById("rating");
 
-    // const rateWrapper = document.querySelectorAll(".section__number");
-    const rates = document.querySelectorAll(".section__number button");
     rates.forEach((rate, clickedIdx) => {
       rate.addEventListener("click", () => {
-        // rateWrapper.classList.add("disabled");
-        console.log(`rate ${clickedIdx + 1} was clicked`);
-
+        // console.log(`rate ${clickedIdx + 1} was clicked`);
         rating.innerHTML = clickedIdx + 1;
       });
     });
 
+
+    function submit() {
+      document.getElementById("submit").style.display = "block";
+    }
   </script>
 </body>
 
