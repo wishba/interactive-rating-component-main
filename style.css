@@ -19,6 +19,7 @@ section {
   transform: translate(-50%, -50%);
 }
 
+section h1,
 section h2 {
   color: hsl(0, 0%, 100%);
 }
